@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/NASA-PICTURE-API/static/css/1.556b888e.chunk.css"
   },
   {
-    "revision": "33fa1bf39b5da0cc64c1d388f571a2b5",
+    "revision": "5cbf96b9e6270dd8f1a626803e610c29",
     "url": "/NASA-PICTURE-API/index.html"
   }
 ];
