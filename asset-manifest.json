@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.2a382f7e.chunk.css",
-  "main.js": "/static/js/main.3fa806ed.chunk.js",
-  "main.js.map": "/static/js/main.3fa806ed.chunk.js.map",
-  "static/css/1.23c3e873.chunk.css": "/static/css/1.23c3e873.chunk.css",
-  "static/js/1.e8673313.chunk.js": "/static/js/1.e8673313.chunk.js",
-  "static/js/1.e8673313.chunk.js.map": "/static/js/1.e8673313.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.1b6335f5.js",
-  "runtime~main.js.map": "/static/js/runtime~main.1b6335f5.js.map",
-  "static/css/1.23c3e873.chunk.css.map": "/static/css/1.23c3e873.chunk.css.map",
-  "static/css/main.2a382f7e.chunk.css.map": "/static/css/main.2a382f7e.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.b9b43e892f3c33f20053fa299d89711e.js": "/precache-manifest.b9b43e892f3c33f20053fa299d89711e.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/NASA-PICTURE-API/static/css/main.2a382f7e.chunk.css",
+  "main.js": "/NASA-PICTURE-API/static/js/main.3fa806ed.chunk.js",
+  "main.js.map": "/NASA-PICTURE-API/static/js/main.3fa806ed.chunk.js.map",
+  "static/css/1.23c3e873.chunk.css": "/NASA-PICTURE-API/static/css/1.23c3e873.chunk.css",
+  "static/js/1.e8673313.chunk.js": "/NASA-PICTURE-API/static/js/1.e8673313.chunk.js",
+  "static/js/1.e8673313.chunk.js.map": "/NASA-PICTURE-API/static/js/1.e8673313.chunk.js.map",
+  "runtime~main.js": "/NASA-PICTURE-API/static/js/runtime~main.1b6335f5.js",
+  "runtime~main.js.map": "/NASA-PICTURE-API/static/js/runtime~main.1b6335f5.js.map",
+  "static/css/1.23c3e873.chunk.css.map": "/NASA-PICTURE-API/static/css/1.23c3e873.chunk.css.map",
+  "static/css/main.2a382f7e.chunk.css.map": "/NASA-PICTURE-API/static/css/main.2a382f7e.chunk.css.map",
+  "index.html": "/NASA-PICTURE-API/index.html",
+  "precache-manifest.b9b43e892f3c33f20053fa299d89711e.js": "/NASA-PICTURE-API/precache-manifest.b9b43e892f3c33f20053fa299d89711e.js",
+  "service-worker.js": "/NASA-PICTURE-API/service-worker.js"
 }
