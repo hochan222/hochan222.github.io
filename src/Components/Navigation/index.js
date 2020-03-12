@@ -9,7 +9,13 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import TextFieldsIcon from '@material-ui/icons/TextFields';
+import TableChartIcon from '@material-ui/icons/TableChart';
 import HomeIcon from '@material-ui/icons/Home';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import BorderBottomIcon from '@material-ui/icons/BorderBottom';
+import TimelineIcon from '@material-ui/icons/Timeline';
+import TransformIcon from '@material-ui/icons/Transform';
 
 const styles = {
     root: {
@@ -41,12 +47,42 @@ render() {
                 <Drawer open={this.state.toggle}>
                     <MenuItem onClick={this.handleDrawerToggle}>
                         <Link component={RouterLink} to="/">
-                            <HomeIcon />
+                            <HomeIcon/>
                         </Link>
                     </MenuItem>
                     <MenuItem onClick={this.handleDrawerToggle}>
                         <Link component={RouterLink} to="/texts">
-                            <TextFieldsIcon />
+                            <TextFieldsIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/table">
+                            <TableChartIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/avatar">
+                            <AccountCircleIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/photos">
+                            <PhotoLibraryIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/timeline">
+                            <TimelineIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/transform">
+                            <TransformIcon/>
+                        </Link> 
+                    </MenuItem>
+                    <MenuItem onClick={this.handleDrawerToggle}>
+                        <Link component={RouterLink} to="/footer">
+                            <BorderBottomIcon/>
                         </Link> 
                     </MenuItem>
                 </Drawer>

@@ -7,7 +7,7 @@ class Home extends React.Component {
         return (
             <Card>
                 <CardContent>
-                    React template
+                    React Basic Template
                 </CardContent>
             </Card>
         );

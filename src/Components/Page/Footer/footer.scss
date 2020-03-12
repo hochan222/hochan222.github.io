@@ -1,0 +1,16 @@
+.footer-container {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+        color: #61dafb;
+        &:hover {
+            color: white;
+        }
+    }
+    
+}
