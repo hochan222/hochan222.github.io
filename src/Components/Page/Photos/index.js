@@ -1,51 +1,40 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
+import React, { useState, useEffect } from 'react';
+import Grid from '@material-ui/core/Grid';
+import PplCard from './PplCard';
 
 export default function MediaCard() {
-  const classes = useStyles();
+    const [users, setUsers] = useState([]);
 
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-  );
+    useEffect(() => {
+        async function fetchData() {
+            setUsers(
+                await fetch('https://reqres.in/api/users?page=2')
+                .then(res => res.json())
+                .then(res => res.data)
+                .catch(err => console.log(err, 'Fetch warning!!'))
+            )
+        }
+        fetchData();
+    }, [])
+    return (
+        <React.Fragment>
+            <h3>THE TRUE BEAUTY OF MATERIAL UI</h3>
+            <Grid
+                container
+                spacing={10}
+                style={{padding: '24px'}}
+            >
+                {users.map(user =>
+                    <Grid
+                        item
+                        xs={12} sm={6} md={4} lg={4} xl={3}>
+                        <PplCard
+                            email={user.email}
+                        />
+                    </Grid>
+                )}
+            </Grid>
+        </React.Fragment>
+      );
 }
+// https://www.youtube.com/watch?v=RnKSA-51kpI&t=1655s

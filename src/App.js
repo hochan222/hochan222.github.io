@@ -10,13 +10,14 @@ import TimeLine from './Components/Page/TimeLine';
 import Transform from './Components/Page/Transform';
 
 import { HashRouter as Router, Route } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
     <React.Fragment>
       <Router>
         <Navigation>
-          <div>
+          <div className="RouteOut">
             <Route exact path="/" component={Home}/>
             <Route exact path="/texts" component={Texts}/>
             <Route exact path="/table" component={Table}/>
