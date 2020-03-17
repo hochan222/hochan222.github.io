@@ -12,6 +12,7 @@ const useFetch = url => {
   
     useEffect((url) => {
         async function fetchData (url) {
+            setLoading(true);
             // axios.get('https://reqres.in/api/users?page=2')
             //     .then(res => console.log(res));
             axios.get('http://api1.emmafit.co.kr/franchisee_maplist_json.do')
