@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# AI 크롤러 차단
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: BingBot
+Disallow: /
+
+User-agent: Bard
+Disallow: /
+
+User-agent: Gemini
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Wayback
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+# 사이트맵 위치
+Sitemap: https://hochan222.github.io/sitemap.xml
+
